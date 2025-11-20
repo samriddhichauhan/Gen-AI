@@ -1,65 +1,62 @@
-# Tiny GPT-2 Local Chatbot
+# Gen-AI Experiments 🚀
 
-This project is a simple **terminal-based AI chatbot** built using a **Tiny GPT-2 model from Hugging Face**.  
-It runs **locally on your computer (CPU only)** and is designed to help understand how to load and use language models with Python and the 🤗 Transformers library.
+This folder contains my personal experiments, projects, and practice code related to **Generative AI (Gen-AI)**, including:
 
----
+- Working with **Hugging Face models**
+- Building small **chatbots**
+- Trying out **text generation**, **fine-tuning**, and **AI/ML concepts**
 
-## 🎯 Project Goal
-
-The main purpose of this project is to:
-
-- Learn how to **download and use a Hugging Face model** in Python  
-- Create a **basic chatbot** that replies to user input in the terminal  
-- Experiment with **text generation** without needing any API key
+It is mainly a **learning and exploration space** where I test different ideas in AI and Machine Learning.
 
 ---
 
-## 🧠 Model Used
+## 📂 Folder Purpose
 
-- **Model:** `sshleifer/tiny-gpt2`  
-- **Type:** Tiny version of GPT-2  
-- **Why this model?**
-  - It is **small and fast**
-  - Good for **testing and learning**
-  - Can run on **normal laptops without GPU**
+The **Gen-AI** folder is used to:
 
-> Note: This is a tiny model, so responses may sometimes be random or nonsensical.  
-> It is mainly for learning and experimentation, not for production use.
-
----
-
-## 🧩 How It Works
-
-1. The script loads:
-   - a **pretrained language model** (Tiny GPT-2)  
-   - a **tokenizer** (to convert text → numbers → text)
-2. The user types a message in the terminal.
-3. The input text is tokenized and passed to the model.
-4. The model **generates a continuation** of the text.
-5. The generated tokens are decoded back into readable text.
-6. This repeats in a loop until the user types `exit`.
+- Organize all my Gen-AI related scripts and notebooks in one place  
+- Practice:
+  - loading models from **Hugging Face**
+  - generating text
+  - basic fine-tuning
+- Build small demo projects for:
+  - college
+  - hackathons
+  - personal learning
 
 ---
 
-## ✅ Features
+## 🧠 What You’ll Find Here
 
-- Runs completely **locally** after the first model download  
-- Uses the **Hugging Face Transformers** library  
-- Works on **CPU only**  
-- Simple and easy **chat loop** in the terminal  
-- Handles missing `pad_token` to avoid common errors
+Some examples of things this folder may contain:
+
+- `tiny_gpt2_chat.py`  
+  A simple terminal chatbot using a tiny GPT-2 model from Hugging Face.
+
+- Experiment scripts for:
+  - text generation  
+  - trying different models (e.g. GPT-2, DistilGPT-2, DialoGPT, etc.)  
+  - playing with parameters like `max_new_tokens`, `temperature`, `top_k`, `top_p`
+
+- Future:
+  - notebooks for **fine-tuning models**  
+  - simple **RAG (Retrieval-Augmented Generation)** experiments  
+  - small Gen-AI projects (study assistants, Q&A bots, etc.)
 
 ---
 
-## 📦 Requirements
+## 🛠️ Tech Stack
+
+The code in this folder may use:
 
 - **Python 3**
-- Python packages:
-  - `transformers`
-  - `torch`
+- **PyTorch** (`torch`)
+- **Hugging Face Transformers** (`transformers`)
+- Optionally:
+  - `datasets` for training or fine-tuning
+  - `accelerate` for faster training (later)
 
-Install the dependencies with:
+To install basic dependencies:
 
 ```bash
 pip install transformers torch
